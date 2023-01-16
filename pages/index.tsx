@@ -1,7 +1,20 @@
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 export default function Home(): JSX.Element {
+  const { t } = useTranslation('home');
+
   return (
     <main>
-      <h1>John Template</h1>
+      <h1>{t('TEXT_TITLE')}</h1>
     </main>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'home'])),
+    },
+  };
 }

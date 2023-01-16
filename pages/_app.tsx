@@ -1,8 +1,9 @@
 import '../styles/globals.scss';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { appWithTranslation } from 'next-i18next';
 
-export default function App({ Component, pageProps }: AppProps): JSX.Element {
+function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>
@@ -21,3 +22,5 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
     </>
   );
 }
+
+export default appWithTranslation(App);
