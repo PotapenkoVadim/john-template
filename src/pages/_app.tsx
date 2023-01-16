@@ -2,6 +2,7 @@ import '../styles/globals.scss';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { appWithTranslation } from 'next-i18next';
+import Layout from '@/components/layout/layout';
 
 function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
@@ -18,7 +19,10 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
           rel='icon'
           href='/favicon.ico' />
       </Head>
-      <Component {...pageProps} />
+
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

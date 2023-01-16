@@ -1,0 +1,16 @@
+// fonts
+$font: 16px;
+
+// displays
+$tablet: 1024px;
+$mobile: 768px;
+
+// colors
+$black: #000000;
+$background: #EDF7FA;
+$text: #21243D;
+$accent: #FF6464;
+
+@mixin transition-common {
+  transition: all 0.2s ease-in;
+}

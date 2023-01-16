@@ -1,0 +1,13 @@
+@import '../../../styles/variables';
+
+.icon { display: block; -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;
+  width: 30px; height: 30px; line-height: 1rem;
+
+  &__facebook { -webkit-mask-image: url(../../../../public/images/icons/facebook.svg); }
+  &__instagram { -webkit-mask-image: url(../../../../public/images/icons/instagram.svg); }
+  &__linkedin { -webkit-mask-image: url(../../../../public/images/icons/linkedin.svg); }
+  &__twitter { -webkit-mask-image: url(../../../../public/images/icons/twitter.svg); }
+
+  &_primary { background-color: $text; }
+  &_secondary { background-color: $accent; }
+}

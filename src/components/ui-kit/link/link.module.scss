@@ -1,0 +1,5 @@
+@import '../../../styles/variables';
+
+.link { text-decoration: none; color: $black; font-weight: 500; font-size: 1.25rem; @include transition-common;
+  &:hover { color: $accent; }
+}

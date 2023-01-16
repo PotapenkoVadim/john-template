@@ -1,0 +1,12 @@
+{
+  "HEADER": {
+    "NAVIGATION": {
+      "LINK_WORKS": "Works",
+      "LINK_BLOG": "Blog",
+      "LINK_CONTACT": "Contact"
+    }
+  },
+  "FOOTER": {
+    "TEXT_SUBTITLE": "Copyright ©2020 All rights reserved "
+  }
+}
