@@ -7,7 +7,7 @@ import Button from '@/components/ui-kit/button/button';
 import { configuration } from '@/configuration';
 import { ButtonVariant } from '@/enums';
 
-const johnImage = configuration.mainImage;
+const johnImage = configuration.homePage.mainImage;
 
 const cx = classNames.bind(styles);
 

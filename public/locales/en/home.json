@@ -4,5 +4,9 @@
     "TEXT_DESCRIPTION": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     "BUTTON_TEXT": "Download Resume",
     "IMAGE_ALT": "John Avatar"
+  },
+  "POSTS": {
+    "TEXT_TITLE": "Recent posts",
+    "LINK_VIEW_ALL": "View all"
   }
 }

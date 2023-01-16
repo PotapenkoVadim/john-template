@@ -4,7 +4,7 @@ import styles from './icon.module.scss';
 
 const cx = classNames.bind(styles);
 
-export default function Link({
+export default function Icon({
   variant,
   color,
   className,
