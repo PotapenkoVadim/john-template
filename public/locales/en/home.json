@@ -8,5 +8,8 @@
   "POSTS": {
     "TEXT_TITLE": "Recent posts",
     "LINK_VIEW_ALL": "View all"
+  },
+  "WORKS": {
+    "TEXT_TITLE": "Recent posts"
   }
 }

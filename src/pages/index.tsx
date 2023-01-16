@@ -4,6 +4,7 @@ import classNames from 'classnames/bind';
 import styles from './index.module.scss';
 import HomePageIntroduce from '@/components/pages/home/introduce/introduce';
 import HomePagePosts from '@/components/pages/home/posts/posts';
+import HomePageWorks from '@/components/pages/home/works/works';
 
 const cx = classNames.bind(styles);
 
@@ -12,6 +13,7 @@ export default function Home(): JSX.Element {
     <main className={cx('home')}>
       <HomePageIntroduce />
       <HomePagePosts />
+      <HomePageWorks />
     </main>
   );
 }

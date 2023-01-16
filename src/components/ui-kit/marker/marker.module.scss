@@ -1,0 +1,6 @@
+@import '../../../styles/variables';
+
+.marker { padding: 0 10px; color: $white; font-size: 1.12rem; font-weight: 900; border-radius: 16px;
+  &__primary { background-color: $text; }
+  &__secondary { background-color: $accent; }
+}
