@@ -1,19 +1,12 @@
 import { GetStaticPropsContext, GetStaticPropsResult } from 'next';
-import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import classNames from 'classnames/bind';
-import styles from './index.module.scss';
+import styles from './contact.module.scss';
 
 const cx = classNames.bind(styles);
 
-export default function Home(): JSX.Element {
-  const { t } = useTranslation('home');
-
-  return (
-    <main className={cx('home')}>
-      <h1>{t('TEXT_TITLE')}</h1>
-    </main>
-  );
+export default function Contact(): JSX.Element {
+  return <main className={cx('contact')}>Contact Page</main>;
 }
 
 export async function getStaticProps({
@@ -21,7 +14,7 @@ export async function getStaticProps({
 }: GetStaticPropsContext): Promise<GetStaticPropsResult<unknown>> {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'home']))
+      ...(await serverSideTranslations(locale, ['common']))
     }
   };
 }

@@ -7,19 +7,23 @@ const cx = classNames.bind(styles);
 export default function Link({
   variant,
   color,
-  className
+  className,
+  onClick
 }: {
   variant: IconVariant;
   color?: IconColor;
   className?: string;
+  onClick?: () => void;
 }): JSX.Element {
   return (
     <span
-      className={cx(
-        ['icon', `icon__${variant}`],
+      onClick={onClick}
+      className={cx([
+        'icon',
+        `icon__${variant}`,
         `icon_${color ?? IconColor.PRIMARY}`,
         className
-      )}
+      ])}
     />
   );
 }

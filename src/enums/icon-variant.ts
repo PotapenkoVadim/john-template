@@ -3,4 +3,6 @@ export enum IconVariant {
   INSTAGRAM = 'instagram',
   LINKEDIN = 'linkedin',
   TWITTER = 'twitter',
+  MENU = 'menu',
+  CLOSE = 'close',
 }

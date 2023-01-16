@@ -7,6 +7,8 @@
   &__instagram { -webkit-mask-image: url(../../../../public/images/icons/instagram.svg); }
   &__linkedin { -webkit-mask-image: url(../../../../public/images/icons/linkedin.svg); }
   &__twitter { -webkit-mask-image: url(../../../../public/images/icons/twitter.svg); }
+  &__menu { -webkit-mask-image: url(../../../../public/images/icons/menu.svg); }
+  &__close { -webkit-mask-image: url(../../../../public/images/icons/close.svg); }
 
   &_primary { background-color: $text; }
   &_secondary { background-color: $accent; }
