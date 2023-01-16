@@ -1,0 +1,9 @@
+@import '../../../styles/variables';
+
+.button { padding: 17px 20px; font-size: 1.25rem; border-radius: 2px; border: none; outline: none;
+  color: $white; cursor: pointer;
+  &:hover { opacity: 0.85; }
+
+  &__primary { background-color: $text; }
+  &__secondary { background-color: $accent; }
+}

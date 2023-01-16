@@ -1,3 +1,5 @@
 @import '../styles/variables';
 
-.home { margin-top: 190px; }
+.home { margin-top: 190px;
+  @media (max-width: $tablet) { margin-top: 90px; }
+}

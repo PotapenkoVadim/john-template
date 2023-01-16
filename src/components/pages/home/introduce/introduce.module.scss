@@ -1,0 +1,12 @@
+@import '../../../../styles/variables';
+
+.introduce { display: flex; gap: 115px; align-items: center;
+  &__title { font-size: 2.75rem; font-weight: 700; padding-right: 130px; margin-bottom: 35px; line-height: 3rem; }
+  &__description { margin-bottom: 30px; }
+
+  @media (max-width: $tablet) { flex-direction: column-reverse; gap: 45px;
+    &__image { width: 170px; height: 170px; }
+    &__info { text-align: center; }
+    &__title { padding: 0; font-size: 2rem; margin-bottom: 20px; }
+  }
+}
