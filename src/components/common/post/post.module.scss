@@ -1,0 +1,10 @@
+@import '../../../styles/variables';
+
+.post {background-color: $white;
+  border-radius: 4px; cursor: pointer;
+
+  &__title { font-size: 1.6rem; font-weight: 700; margin-bottom: 10px; }
+  &__data { padding-right: 15px; border-right: 1px solid $text;  }
+  &__tags { padding-left: 15px; color: $light; }
+  &__text { margin-top: 15px; }
+}

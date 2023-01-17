@@ -3,12 +3,12 @@ import Container from '@/components/common/container/container';
 import classNames from 'classnames/bind';
 import styles from './posts.module.scss';
 import Link from '@/components/ui-kit/link/link';
-import HomePagePostsItem from './_item';
 import { configuration } from '@/configuration';
+import Post from '@/components/common/post/post';
 
 const cx = classNames.bind(styles);
 
-const posts = configuration.homePage.posts;
+const posts = configuration.posts;
 
 export default function HomePagePosts(): JSX.Element {
   const { t } = useTranslation('home');
@@ -29,9 +29,10 @@ export default function HomePagePosts(): JSX.Element {
         <div className={cx('posts__list')}>
           {posts.length > 0 &&
             posts.map((item) => (
-              <HomePagePostsItem
+              <Post
                 key={item.id}
-                post={item} />
+                post={item}
+                className={cx('posts__item')} />
             ))}
         </div>
       </Container>

@@ -7,7 +7,7 @@ import { configuration } from '@/configuration';
 
 const cx = classNames.bind(styles);
 
-const works = configuration.homePage.works;
+const works = configuration.works;
 
 export default function HomePageWorks(): JSX.Element {
   const { t } = useTranslation('home');
