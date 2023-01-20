@@ -16,7 +16,8 @@ export const configuration = {
     home: '/',
     works: '/works',
     blog: '/blog',
-    contact: '/contact'
+    contact: '/contact',
+    work: '/work'
   },
   posts: [
     {
