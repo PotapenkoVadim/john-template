@@ -1,6 +1,6 @@
-@import '../../styles/variables';
+@import '../styles/variables';
 
-.works { margin-top: 150px !important;
+.error { margin-top: 150px !important;
   &__title { @include page-title; }
 
   @media (max-width: $tablet) { margin-top: 100px !important; }

@@ -18,3 +18,8 @@ $blue: #00A8CC;
 @mixin transition-common {
   transition: all 0.2s ease-in;
 }
+
+@mixin page-title {
+  font-size: 2.75rem;
+  font-weight: 900;
+}
